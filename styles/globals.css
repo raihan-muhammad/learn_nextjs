@@ -1,9 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); */
+
+@font-face {
+  font-family: 'kepo';
+  src: url('/fonts/Inter-Regular.ttf')
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'kepo';
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
 
 a {
@@ -14,3 +22,20 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1 {
+  margin: 0;
+}
+
+header, footer {
+  padding: 0 135px;
+}
+
+header {
+  width: 100%;
+  height: 746px;
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+  
+}
+
+

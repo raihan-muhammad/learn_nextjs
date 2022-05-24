@@ -1,0 +1,24 @@
+.nav {
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav div {
+	display: flex;
+	align-items: center;
+}
+
+.nav div:first-child ul {
+	padding-left: 72px;
+}
+
+.nav div:first-child ul li {
+	display: inline-block;
+	margin-right: 32px;
+}
+
+.nav .logo {
+	width: 143px;
+	height: 34px;
+}
