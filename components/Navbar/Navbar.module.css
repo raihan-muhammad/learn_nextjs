@@ -1,24 +1,28 @@
 .nav {
+	border-bottom: 1px solid rgba(33, 123, 244, 0.1);
+}
+.nav section {
 	height: 90px;
 	display: flex;
 	justify-content: space-between;
+  padding: 0 135px;
 }
 
-.nav div {
+.nav section div {
 	display: flex;
 	align-items: center;
 }
 
-.nav div:first-child ul {
+.nav section div:first-child ul {
 	padding-left: 72px;
 }
 
-.nav div:first-child ul li {
+.nav section div:first-child ul li {
 	display: inline-block;
 	margin-right: 32px;
 }
 
-.nav .logo {
+.nav section .logo {
 	width: 143px;
 	height: 34px;
 }
