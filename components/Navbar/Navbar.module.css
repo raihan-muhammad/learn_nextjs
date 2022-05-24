@@ -22,7 +22,33 @@
 	margin-right: 32px;
 }
 
-.nav section .logo {
-	width: 143px;
-	height: 34px;
+.nav .input-search {
+	width: 105px;
+	height: 32px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #E5E5E5;
+	font-size: 12px;
+	padding-bottom: 18px;
+	padding-left: 20px;
+}
+
+.nav .input-group-search {
+	position: relative;
+	margin-right: 42px;
+}
+
+.nav .icon-search {
+	position: absolute;
+	top: 0;
+}
+
+.nav .input-search::placeholder {
+	color: #686868;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.nav .input-search:focus-visible {
+	outline: none;
 }
