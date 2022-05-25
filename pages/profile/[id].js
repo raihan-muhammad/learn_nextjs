@@ -12,4 +12,10 @@ const DetailProfile = () => {
   );
 };
 
+// export function getStaticPaths(){
+//   return {
+//     pa
+//   }
+// }
+
 export default DetailProfile;
