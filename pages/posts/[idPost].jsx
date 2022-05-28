@@ -1,5 +1,4 @@
 const DetailPost = (props) => {
-  console.log(props);
   return (
     <>
       <h1>{props.productDetail.title}</h1>
@@ -19,23 +18,37 @@ const getDataPostById = async (id) => {
   return resJson;
 };
 
-export async function getStaticPaths() {
-  const dataPosts = await getDataPosts();
-  return {
-    paths: dataPosts?.map((post) => ({
-      params: { idPost: `${post.id}` },
-    })),
-    fallback: true,
-  };
-}
-
-export async function getStaticProps(context) {
-  const dataDetailPost = await getDataPostById(context.params.idPost);
+export async function getServerSideProps(context) {
+  const data = await getDataPostById(context.params.idPost);
   return {
     props: {
-      productDetail: dataDetailPost,
+      productDetail: data,
     },
   };
 }
+
+// export async function getStaticPaths() {
+//   const dataPosts = await getDataPosts();
+//   return {
+//     paths: [
+//       {
+//         params: { idPost: `1` },
+//       },
+//       {
+//         params: { idPost: `2` },
+//       },
+//     ],
+//     fallback: false,
+//   };
+// }
+
+// export async function getStaticProps(context) {
+//   const dataDetailPost = await getDataPostById(context.params.idPost);
+//   return {
+//     props: {
+//       productDetail: dataDetailPost,
+//     },
+//   };
+// }
 
 export default DetailPost;

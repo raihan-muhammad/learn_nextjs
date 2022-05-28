@@ -33,7 +33,7 @@ const getDataPosts = async () => {
   return resJson;
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await getDataPosts();
   return {
     props: {
@@ -41,5 +41,15 @@ export async function getStaticProps() {
     },
   };
 }
+
+// export async function getStaticProps() {
+//   const data = await getDataPosts();
+//   return {
+//     props: {
+//       posts: data,
+//     },
+//   };
+// }
+
 
 export default PostPage;
